@@ -1,0 +1,2 @@
+class xRangeError(Exception):
+	pass
