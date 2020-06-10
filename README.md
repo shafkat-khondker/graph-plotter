@@ -28,6 +28,7 @@ The three types of functions are as follows:
 
 # Dependencies:
 pip install numpy
+
 pip install pyqt5
 
 # Run:
