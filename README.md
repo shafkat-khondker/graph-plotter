@@ -1,10 +1,10 @@
-# graph-plotter
-Graph viewer that allows users to plot various functions with user-adjustable parameters.
+# Graph Plotter
+Graph plotter that allows users to plot various functions with user-adjustable parameters.
 
 Implemented a graph plotter using Object Oriented Programming in Python
 
 ● The user gets to choose from a list of functions, such as polynomial, trigonometric, as well as functions with 
-no simple mathematical representation (Sawtooth function)
+no simple mathematical representation (SawTooth function)
 
 ● Each function is implemented as its own class, which extends an abstract class Function. 
 
@@ -22,6 +22,13 @@ range are changed.
 The three types of functions are as follows:
 1. Polynomial function in the form of y= A*(x)^B
 2. Trigometric function in the form of y=A*sin(B*x)
-3. Sawtooth function with an upward slope of 1 and downward slope of -0.5. User can adjust amplitude A and vertical shift B
+3. Sawtooth function with an upward slope of 1 and downward slope of -0.5. Each asymmetric triangle has a width of 3 x-units. User can adjust amplitude A and vertical shift B
 
 ● A GUI allows the user to select the function to plot, to enter values of A, B and the range of x. PyQT was used to program the GUI.
+
+# Dependencies:
+pip install numpy
+pip install pyqt5
+
+# Run:
+Running main.py will open the GUI

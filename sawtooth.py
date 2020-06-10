@@ -1,3 +1,7 @@
+"""
+The SawTooth function does not have a simple mathmetical representation 
+It is a asymmetrical triangle, with an upward slope of 1, downward slope of -0.5, and a width of 3 x units 
+"""
 import numpy as np
 import matplotlib.pyplot as plt
 from function import *
@@ -8,8 +12,8 @@ class SawTooth(Function):
 		self.y_vals=[]
 		super().__init__(A, B, x_start, x_end)
 
-
 	def x_range(self):
+		#for the sawtooth graph, the input values of x range is converted to integers for simplify calculations
 		return np.arange(int(self.x_start), int(self.x_end)+1, 1)
 
 	def y_values(self):
@@ -21,8 +25,7 @@ class SawTooth(Function):
 		i=0
 		x_first=int(self.x_start)
 		while i<len(x+1):
-		#	print("x start modulus {}".format(x_first % 3))
-			if x_first % 3 is 0:
+			if x_first % 3 is 0: #the upward slope only begins for values of x that is divisible by 3
 				self.up_slope(x[i])
 				x_first+=1
 				i+=1
@@ -30,10 +33,7 @@ class SawTooth(Function):
 				self.down_slope(x[i])
 				x_first+=1
 				i+=1
-		#for x in range(len(self.x_range())):
-		#	print(self.x_range()[x])
-		#print("length of x is {}".format(len(self.x_range())))
-		#print("length of y is {}".format(len(self.y_values())))
+		
 		plt.close()
 		plt.ion()
 		plt.gcf().canvas.set_window_title('Sawtooth function')
@@ -44,9 +44,11 @@ class SawTooth(Function):
 		plt.show()
 
 	def down_slope(self, x_value):
+		#calculates the y values for the downward slope
 		self.y_values().append((1-0.5*(x_value % 3))*self.A + self.B)
 
 	def up_slope(self, x_value):
+		#calculates the y values for the upward slope
 		self.y_values().append(((x_value % 3)-0.5)*self.A + self.B)
 
 
