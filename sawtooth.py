@@ -39,6 +39,8 @@ class SawTooth(Function):
 		plt.gcf().canvas.set_window_title('Sawtooth function')
 		plt.title("Scaling factor A = {}, and Vertical shift B ={}".format(self.A, self.B))
 		plt.plot(x, y)
+		plt.xlabel("x values")
+		plt.ylabel("y values")
 		plt.show()
 
 	def down_slope(self, x_value):
