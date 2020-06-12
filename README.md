@@ -27,7 +27,7 @@ The three types of functions are as follows:
 ● A GUI allows the user to select the function to plot, to enter values of A, B and the range of x. PyQT was used to program the GUI.
 
 # Dependencies:
-pip install numpy
+pip install numpy//
 pip install pyqt5
 
 # Run:
