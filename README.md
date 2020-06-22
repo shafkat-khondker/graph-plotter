@@ -26,6 +26,28 @@ The three types of functions are as follows:
 
 ● A GUI allows the user to select the function to plot, to enter values of A, B and the range of x. PyQT was used to program the GUI.
 
+Here are few examples to show how this program runs.
+<figure>
+<p style="text-align:center;"><img src="images/GUI.jpg" class="centerImage" alt="Graphical User Interface"  width="250" height="250" ></p>
+</figure>
+
+The graphical user interface shows the user the different type of functions that can be plotted. A user can select the function from a drop down menu, and then enter the parameters for the graph. The default values are also shown. 
+
+<img src="images/polynomial_values.jpg" alt="Polynomial values"  width="250" height="250" >
+<img src="images/polynomial_graph.jpg" alt="Polynomial graph"  width="250" height="250" >
+
+The figures above show an example of the polynomial function y=1*x^3, with a range that goes from -5 to 5. A few other examples supported by the viewer include square roots and inverse functions.
+
+<img src="images/trig_values.jpg" alt="Trig values"  width="250" height="250" >
+<img src="images/trig_image.jpg" alt="Trig graph"  width="250" height="250" >
+
+The figures above show an example of a trigonometric function y=2*sin(3*x) with x range [-10,10]
+
+<img src="images/sawtooth_values.jpg" alt="Sawtooth values"  width="250" height="250" >
+<img src="images/sawtooth_graph.jpg" alt="Sawotooth graph"  width="250" height="250" >
+
+Figures above show an example of a sawtooth graph, with an amplitude of 2 and vertical shift of 4. In this case, the range goes from -5 to 5
+
 # Dependencies:
 pip install numpy
 
