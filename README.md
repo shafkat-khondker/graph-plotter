@@ -1,4 +1,4 @@
-# Graph Plotter
+# CZ Biohub R&D Engineer Programming Challenge (For OOP practice)
 Graph plotter that allows users to plot various functions with user-adjustable parameters.
 
 Implemented a graph plotter using Object Oriented Programming in Python
